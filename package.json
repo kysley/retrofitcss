@@ -1,0 +1,46 @@
+{
+  "name": "retrofitcss",
+  "filename": "retrofit.min.css",
+  "version": "0.0.5",
+  "description": "The easiest framework to RETROFIT into your project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Testing\"",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kysley/retrofitcss.git"
+  },
+  "author": "Evan Kysley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kysley/retrofitcss/issues"
+  },
+  "homepage": "http://retrofit.space",
+  "autoupdate": {
+    "source": "git",
+    "target": "git:https://github.com/kysley/retrofitcss.git",
+    "basePath": "dist",
+    "files": [
+      "retrofit.min.css",
+      "retrofit.css"
+    ]
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "latest",
+    "gulp-git": "^1.9.0",
+    "gulp-header": "^1.8.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "latest",
+    "gulp-size": "~0.1.2",
+    "gulp-util": "~2.2.9"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2"
+  }
+}
