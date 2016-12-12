@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+  head
+    title= "framework name"
+
+    link(href='css/framework.css', rel='stylesheet')
+    link(href='css/styles.css', rel='stylesheet')
+
+  body
+    .border-top
+    //- .border-bottom
+    //- .border-left
+    .border-right
+    .container
+      .row
+        .twelve.columns
+          h1.header.header__main framework name
+          h2.header.header__secondary a featherweight, no install necessary css starting point
+          a(href='#begin')
+            h3.header__link lets see
+    .container
+      .border-left
+      .row
+        .twelve.columns
+          .doc
+            h2.doc__header frameworkname
+            p.doc__paragraph col-md-4 col-sm-10 col-lg-3.... Frameworkname doesn't use that. If you don't feel like rummaging through thousands of lines of css, confusing col-no-thanks classes, or just want something barebones, this is for you. Frameworkname includes core HTML styles and a grid.
+          .doc
+            h2.doc__header variables <span class="dye">[sass only]</span>
+            p.doc__paragraph Life is better with variables, which is why I included a dual-variable configuration with the SASS version of frameworkname.
+            pre
+              code.
+                  // Define your color palette
+                  $blue: #00f;
+                  $off-grey: #333;
+
+                  // Apply your palette here
+                  $button-color: $blue;
+                  $button-primary: $off-grey;
+            p.doc__paragraph Nothing is more annoying than cmd+f -ing a hex code and replacing all instances, so let the change of 1 variable do it all for you :)
+          .doc
+            h2.doc__header grid
+            p.doc__paragraph frameworkname uses a 12-column grid with a max width of <i>whatever you want it to be</i>.<br/>The max-width can be changed with one line of CSS, then all columns will resize accordingly. 
+            .row
+              .one.column.ex One
+              .eleven.columns.ex Eleven
+            .row 
+              .two.columns.ex Two
+              .ten.columns.ex Ten
+            .row
+              .three.columns.ex Three
+              .nine.columns.ex Nine
+            .row
+              .four.columns.ex Four
+              .eight.columns.ex Eight
+            .row
+              .five.columns.ex Five
+              .seven.columns.ex Seven
+            .row
+              .six.columns.ex Six
+              .six.columns.ex Six
+            .row
+              .seven.columns.ex Seven
+              .five.columns.ex Five
+            .row
+              .eight.columns.ex Eight
+              .four.columns.ex Four
+            .row
+              .nine.columns.ex Nine
+              .three.columns.ex Three
+            .row
+              .ten.columns.ex Ten
+              .two.columns.ex Two
+            .row
+              .eleven.columns.ex Eleven
+              .one.column.ex One
+          .doc
+            h2.doc__header typography
+            p.doc__paragraph Frameworkname uses <code>rems</code> for font sizing and <code>ems</code> for spacing when dealing with any <i>non standard</i> font sizes.
+            .row 
+              .six.columns
+                p.doc__paragraph The base font asks for HelveticaNeue, falling back to Helvetica, and then Arial. We also have <a href="http://myBaseUrl.com/#">anchors</a>, <u>underlines</u>, <em>italics</em>, and <strong>strong</strong>. 
+              .six.columns
+                h1 Heading 1
+                h2 Heading 2
+                h3 Heading 3
+                h4 Heading 4
+                h5 Heading 5
+                h6 Heading 6
+          .doc
+            h2.doc__header buttons
+            p.doc__paragraph We have basic button and well.. another basic button. <br/><br/>The primary button is styled grey, meaning to draw attention. Where as the basic button is blue with a white background.
+            div
+              a(href="#").button button class
+              button button object
+              input(type="submit" value="submit button")
+              input(type="button" value="button button")
+            pre
+              code.
+                <a class="button">button class</a>
+                <button>button object</button>
+                <input type="submit" value="submit button"/ >
+                <input type="button" value="button button"/ >
+            a.button.button__primary button class
+            button.button__primary button object
+            input(type="submit" value="submit button").button__primary
+            input(type="button" value="button button").button__primary
+            pre
+              code.
+                <a class="button button__primary">button class</a>
+                <button class="button button__primary">button object</button>
+                <input class="button__primary" type="submit" value="submit button"/>
+                <input class="button__primary" type="button" value="button button"/>

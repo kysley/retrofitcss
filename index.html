@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>framework name</title>
+    <link href="css/framework.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="border-top"></div>
+    <div class="border-right"></div>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h1 class="header header__main">framework name</h1>
+          <h2 class="header header__secondary">a featherweight, no install necessary css starting point</h2><a href="#begin">
+            <h3 class="header__link">lets see</h3></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="border-left"></div>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="doc">
+            <h2 class="doc__header">frameworkname</h2>
+            <p class="doc__paragraph">col-md-4 col-sm-10 col-lg-3.... Frameworkname doesn't use that. If you don't feel like rummaging through thousands of lines of css, confusing col-no-thanks classes, or just want something barebones, this is for you. Frameworkname includes core HTML styles and a grid.</p>
+          </div>
+          <div class="doc">
+            <h2 class="doc__header">variables <span class="dye">[sass only]</span></h2>
+            <p class="doc__paragraph">Life is better with variables, which is why I included a dual-variable configuration with the SASS version of frameworkname.</p>
+            <pre><code>// Define your color palette
+$blue: #00f;
+$off-grey: #333;
+
+// Apply your palette here
+$button-color: $blue;
+$button-primary: $off-grey;</code></pre>
+            <p class="doc__paragraph">Nothing is more annoying than cmd+f -ing a hex code and replacing all instances, so let the change of 1 variable do it all for you :)</p>
+          </div>
+          <div class="doc">
+            <h2 class="doc__header">grid</h2>
+            <p class="doc__paragraph">frameworkname uses a 12-column grid with a max width of <i>whatever you want it to be</i>.<br/>The max-width can be changed with one line of CSS, then all columns will resize accordingly. </p>
+            <div class="row">
+              <div class="one column ex">One</div>
+              <div class="eleven columns ex">Eleven</div>
+            </div>
+            <div class="row"> 
+              <div class="two columns ex">Two</div>
+              <div class="ten columns ex">Ten</div>
+            </div>
+            <div class="row">
+              <div class="three columns ex">Three</div>
+              <div class="nine columns ex">Nine</div>
+            </div>
+            <div class="row">
+              <div class="four columns ex">Four</div>
+              <div class="eight columns ex">Eight</div>
+            </div>
+            <div class="row">
+              <div class="five columns ex">Five</div>
+              <div class="seven columns ex">Seven</div>
+            </div>
+            <div class="row">
+              <div class="six columns ex">Six</div>
+              <div class="six columns ex">Six</div>
+            </div>
+            <div class="row">
+              <div class="seven columns ex">Seven</div>
+              <div class="five columns ex">Five</div>
+            </div>
+            <div class="row">
+              <div class="eight columns ex">Eight</div>
+              <div class="four columns ex">Four</div>
+            </div>
+            <div class="row">
+              <div class="nine columns ex">Nine</div>
+              <div class="three columns ex">Three</div>
+            </div>
+            <div class="row">
+              <div class="ten columns ex">Ten</div>
+              <div class="two columns ex">Two</div>
+            </div>
+            <div class="row">
+              <div class="eleven columns ex">Eleven</div>
+              <div class="one column ex">One</div>
+            </div>
+          </div>
+          <div class="doc">
+            <h2 class="doc__header">typography</h2>
+            <p class="doc__paragraph">Frameworkname uses <code>rems</code> for font sizing and <code>ems</code> for spacing when dealing with any <i>non standard</i> font sizes.</p>
+            <div class="row"> 
+              <div class="six columns">
+                <p class="doc__paragraph">The base font asks for HelveticaNeue, falling back to Helvetica, and then Arial. We also have <a href="http://myBaseUrl.com/#">anchors</a>, <u>underlines</u>, <em>italics</em>, and <strong>strong</strong>. </p>
+              </div>
+              <div class="six columns">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+              </div>
+            </div>
+          </div>
+          <div class="doc">
+            <h2 class="doc__header">buttons</h2>
+            <p class="doc__paragraph">We have basic button and well.. another basic button. <br/><br/>The primary button is styled grey, meaning to draw attention. Where as the basic button is blue with a white background.</p>
+            <div><a class="button" href="#">button class</a>
+              <button>button object</button>
+              <input type="submit" value="submit button">
+              <input type="button" value="button button">
+            </div>
+            <pre><code><a class="button">button class</a>
+<button>button object</button>
+<input type="submit" value="submit button"/ >
+<input type="button" value="button button"/ ></code></pre><a class="button button__primary">button class</a>
+            <button class="button__primary">button object</button>
+            <input class="button__primary" type="submit" value="submit button">
+            <input class="button__primary" type="button" value="button button">
+            <pre><code><a class="button button__primary">button class</a>
+<button class="button button__primary">button object</button>
+<input class="button__primary" type="submit" value="submit button"/>
+<input class="button__primary" type="button" value="button button"/></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
