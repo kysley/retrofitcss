@@ -1,0 +1,90 @@
+.container {
+  width: 90% !important;
+  min-height: 100vh;
+}
+
+.dye {
+  color: #00f;
+}
+
+.header {
+  width: auto;
+  text-align: center;
+}
+
+.header__main {
+  margin-top: 8em;
+  font-size: 4rem;
+  color: #333;
+}
+
+.header__secondary {
+  font-size: 1.5rem;
+  color: #00f;
+}
+
+h3.header__link {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.doc {
+  margin-left: 9em;
+  margin-right: 9em;
+  padding-top: 6em;
+  border-top: 1px solid #00f;
+  padding-bottom: 4em;
+}
+
+.doc__header {
+  text-transform: uppercase;
+}
+
+.doc__paragraph {
+  font-size: 1.8rem;
+}
+
+.ex {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #333;
+  background: #f7f7f7;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.border-top {
+  top: 0px;
+}
+
+.border-bottom {
+  bottom: 0px;
+}
+
+.border-right {
+  right: 0px;
+  content: "";
+}
+
+.border-left {
+  left: 0px;
+}
+
+.border-top, .border-bottom {
+  height: 35px;
+  left: 0px;
+  right: 0px;
+}
+
+.border-left, .border-right {
+  width: 35px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.border-top, .border-bottom, .border-left, .border-right {
+  position: absolute;
+  background: #00f;
+  z-index: 10;
+}
