@@ -6,6 +6,7 @@
 * https://kysley.github.io/license
 */
 
+@charset "UTF-8";
 /* Contents
 –––––––––––––––––––
 + Base Styles
@@ -18,7 +19,6 @@
 + Misc
 + Media Queries
 */
-
 /*-----------
   BASE STYLES
 -----------*/
@@ -249,16 +249,14 @@ p {
 }
 
 /*-----------
-  LINKS
+  LISTS
 -----------*/
-a {
-  text-decoration: underline;
-  color: #00f;
+ul {
+  list-style: circle inside;
 }
 
-a:hover {
-  color: #333;
-  text-decoration: none;
+ol {
+  list-style: decimal inside;
 }
 
 /*-----------
@@ -317,14 +315,16 @@ input[type="button"].button__primary:hover {
 }
 
 /*-----------
-  LISTS
+  LINKS
 -----------*/
-ul {
-  list-style: circle inside;
+a {
+  text-decoration: underline;
+  color: #00f;
 }
 
-ol {
-  list-style: decimal inside;
+a:hover {
+  color: #333;
+  text-decoration: none;
 }
 
 /*-----------
@@ -378,7 +378,6 @@ textarea {
   padding-bottom: 4px;
 }
 
-
 /*-----------
   MISC
 -----------*/
@@ -413,7 +412,7 @@ button,
 .button {
   margin-bottom: 1em;
 }
- 
+
 input,
 textarea,
 select,
