@@ -12,7 +12,7 @@ var pug = require('gulp-pug');
 
 
 gulp.task('build', function () {
-	return gulp.src(['./src/toc.css', './src/base.css', './src/typography.css', './src/grid.css', './src/links.css', './src/buttons.css', './src/lists.css', './src/forms.css', './src/util.css', './src/misc.css'])
+	return gulp.src(['./src/toc.css', './src/base.css', './src/typography.css', './src/grid.css', './src/links.css', './src/buttons.css', './src/lists.css', './src/forms.css', './src/misc.css'])
 		.pipe($.concat('retrofit.css'))
 		.pipe($.header(comment + '\n'))
 		.pipe($.size())
@@ -32,11 +32,11 @@ gulp.task('watch', function() {
   gulp.watch(['src/*.css'], ['default']);
 });
 
-gulp.task('sass', function() {
-	return gulp.src('sass/**/*.scss')
-		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-		.pipe(gulp.dest('./css/'));
-});
+// gulp.task('sass', function() {
+// 	return gulp.src('sass/**/*.scss')
+// 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+// 		.pipe(gulp.dest('./css/'));
+// });
 
 gulp.task('default', ['build', 'minify']);
 
