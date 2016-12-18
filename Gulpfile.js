@@ -9,44 +9,49 @@ var comment = '\/*\r\n* RETROFIT ' + pkg.version + '\r\n* Copyright 2016, Evan K
 var $ = require('gulp-load-plugins')();
 var pug = require('gulp-pug');
 
-
-
-gulp.task('build', function () {
-	return gulp.src(['./src/toc.css', './src/base.css', './src/typography.css', './src/grid.css', './src/links.css', './src/buttons.css', './src/lists.css', './src/forms.css', './src/misc.css'])
-		.pipe($.concat('retrofit.css'))
-		.pipe($.header(comment + '\n'))
-		.pipe($.size())
-		.pipe(gulp.dest('./dist/'));
-});
-
-gulp.task('minify', ['build'], function() {
-  return gulp.src(['./dist/retrofit.css'])
-    .pipe(minifyCSS())
-    .pipe($.header(comment))
-    .pipe($.size())
-    .pipe($.concat('retrofit.min.css'))
-    .pipe(gulp.dest('./dist/'));
-});
-
 gulp.task('watch', function() {
-  gulp.watch(['src/*.css'], ['default']);
+  gulp.watch('./**/*.scss', ['build']);
 });
 
-// gulp.task('sass', function() {
-// 	return gulp.src('sass/**/*.scss')
-// 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-// 		.pipe(gulp.dest('./css/'));
-// });
+gulp.task('build', function() {
+  gulp.src('./*.scss')
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe($.concat('retrofit.css'))
+    .pipe($.header(comment + '\n'))
+    .pipe($.size())
+    .pipe(gulp.dest('./dist'))
+});
 
+gulp.task('minify', function() {
+  gulp.src('./*.scss')
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(minifyCSS())
+    .pipe($.concat('retrofit.min.css'))
+    .pipe($.header(comment + '\n'))
+    .pipe($.size())
+    .pipe(gulp.dest('./dist'))
+})
 gulp.task('default', ['build', 'minify']);
 
-// gulp.task('pug',function(){
-// 	return gulp.src('*.pug')
-// 		.pipe(pug({pretty: true}))
-// 		.pipe(gulp.dest('./'));
+// gulp.task('build', function () {
+// 	return gulp.src(['./src/toc.css', './src/base.css', './src/typography.css', './src/grid.css', './src/links.css', './src/buttons.css', './src/lists.css', './src/forms.css', './src/misc.css'])
+// 		.pipe($.concat('retrofit.css'))
+// 		.pipe($.header(comment + '\n'))
+// 		.pipe($.size())
+// 		.pipe(gulp.dest('./dist/'));
 // });
 
-// gulp.task('default', function() {
-// 	gulp.watch('sass/**/*.scss',['sass']);
-// 	gulp.watch('*.pug',['pug']);
+// gulp.task('minify', ['build'], function() {
+//   return gulp.src(['./dist/retrofit.css'])
+//     .pipe(minifyCSS())
+//     .pipe($.header(comment))
+//     .pipe($.size())
+//     .pipe($.concat('retrofit.min.css'))
+//     .pipe(gulp.dest('./dist/'));
 // });
+
+// gulp.task('watch', function() {
+//   gulp.watch(['src/*.css'], ['default']);
+// });
+
+// gulp.task('default', ['build', 'minify']);
