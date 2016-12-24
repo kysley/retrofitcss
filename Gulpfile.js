@@ -31,7 +31,14 @@ gulp.task('minify', function() {
     .pipe($.size())
     .pipe(gulp.dest('./dist'))
 })
-gulp.task('default', ['build', 'minify']);
+
+gulp.task('pug', function() {
+    return gulp.src('*.pug')
+    .pipe(pug({pretty: true}))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', ['build', 'minify', 'pug']);
 
 // gulp.task('build', function () {
 // 	return gulp.src(['./src/toc.css', './src/base.css', './src/typography.css', './src/grid.css', './src/links.css', './src/buttons.css', './src/lists.css', './src/forms.css', './src/misc.css'])
