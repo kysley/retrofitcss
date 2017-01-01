@@ -1,7 +1,7 @@
 {
   "name": "retrofitcss",
   "filename": "retrofit.min.css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The easiest framework to RETROFIT into your project",
   "main": "gulpfile.js",
   "scripts": {
