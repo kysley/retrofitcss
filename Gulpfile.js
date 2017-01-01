@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var comment = '\/*\r\n* RETROFIT ' + pkg.version + '\r\n* Copyright 2016, Evan Kysley\r\n* http:\/\/retrofit.space\/\r\n* Free to use under the MIT license.\r\n* https:\/\/kysley.github.io\/license\r\n*\/\r\n';
 var $ = require('gulp-load-plugins')();
-var pug = require('gulp-pug');
+// var pug = require('gulp-pug');
 
 gulp.task('watch', function() {
   gulp.watch('./**/*.scss', ['build']);
@@ -32,13 +32,13 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('./dist'))
 })
 
-gulp.task('pug', function() {
-    return gulp.src('*.pug')
-    .pipe(pug({pretty: true}))
-    .pipe(gulp.dest('./'));
-});
+// gulp.task('pug', function() {
+//     return gulp.src('*.pug')
+//     .pipe(pug({pretty: true}))
+//     .pipe(gulp.dest('./'));
+// });
 
-gulp.task('default', ['build', 'minify', 'pug']);
+gulp.task('default', ['build', 'minify']);
 
 // gulp.task('build', function () {
 // 	return gulp.src(['./src/toc.css', './src/base.css', './src/typography.css', './src/grid.css', './src/links.css', './src/buttons.css', './src/lists.css', './src/forms.css', './src/misc.css'])
