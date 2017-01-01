@@ -10,7 +10,7 @@ input[type="button"] {
   display: inline-block;
   height: 40px;
   padding: 0 1.875em;
-  color: #00f;
+  color: transparent;
   font-size: 1.2rem;
   line-height: 38px;
   text-transform: uppercase;
@@ -19,37 +19,49 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid #00f;
+  border: 2px solid transparent;
   box-sizing: border-box;
   outline: 0;
+  border-radius: 25px;
+
+  &:hover {
+    color: transparent;
+    border-color: transparent;
+  }
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #333;
-  border-color: #333;
-  outline: 0;
-}
+// .button:hover,
+// button:hover,
+// input[type="submit"]:hover,
+// input[type="reset"]:hover,
+// input[type="button"]:hover {
+//   color: transparent;
+//   border-color: transparent;
+//   outline: 0;
+// }
 
 .button.button__primary,
 button.button__primary,
 input[type="submit"].button__primary,
 input[type="reset"].button__primary,
 input[type="button"].button__primary {
-  color: #fefefe;
-  border-color: #333;
-  background: #333;
+  color: transparent;
+  border-color: transparent;
+  background: transparent;
+
+  &:hover {
+    color: transparent;
+    background: transparent;
+
+  }
 }
 
-.button.button__primary:hover,
-button.button__primary:hover,
-input[type="submit"].button__primary:hover,
-input[type="reset"].button__primary:hover,
-input[type="button"].button__primary:hover {
-  color: #333;
-  background: #fefefe;
-  border-color: #333;
-}
+// .button.button__primary:hover,
+// button.button__primary:hover,
+// input[type="submit"].button__primary:hover,
+// input[type="reset"].button__primary:hover,
+// input[type="button"].button__primary:hover {
+//   color: transparent;
+//   background: transparent;
+//   border-color: transparent;
+// }
