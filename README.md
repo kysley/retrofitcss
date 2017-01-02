@@ -1,4 +1,4 @@
-#[RETROFIT](http://RETROFIT.space)
+#[RETROFIT](http://retrograde.space)
 
 One of the most basic css starting points.
 
@@ -17,10 +17,10 @@ $ npm install --save retrofitcss
 **Link to it**
 
 ```html
-<link rel="stylesheet" href="http://RETROFIT.space/dist/retrofit.min.css"/>
+<link rel="stylesheet" href="http://retrograde.space/dist/retrofit.min.css"/>
 ```
 
-## [Documentation](http://RETROFIT.space)
+## [Documentation](http://retrograde.space)
 
 ## Find a bug?
 
