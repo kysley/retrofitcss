@@ -30,16 +30,6 @@ input[type="button"] {
   }
 }
 
-// .button:hover,
-// button:hover,
-// input[type="submit"]:hover,
-// input[type="reset"]:hover,
-// input[type="button"]:hover {
-//   color: transparent;
-//   border-color: transparent;
-//   outline: 0;
-// }
-
 .button.button__primary,
 button.button__primary,
 input[type="submit"].button__primary,
@@ -55,13 +45,3 @@ input[type="button"].button__primary {
 
   }
 }
-
-// .button.button__primary:hover,
-// button.button__primary:hover,
-// input[type="submit"].button__primary:hover,
-// input[type="reset"].button__primary:hover,
-// input[type="button"].button__primary:hover {
-//   color: transparent;
-//   background: transparent;
-//   border-color: transparent;
-// }

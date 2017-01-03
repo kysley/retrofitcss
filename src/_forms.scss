@@ -18,20 +18,10 @@ select {
   outline: 0;
   width: 100%;
   display: inline-block;
-}
 
-input[type="email"]:hover, input[type="email"]:focus,
-input[type="search"]:hover,
-input[type="search"]:focus,
-input[type="text"]:hover,
-input[type="text"]:focus,
-input[type="password"]:hover,
-input[type="password"]:focus,
-textarea:hover,
-textarea:focus,
-select:hover,
-select:focus {
-  border: 1px solid transparent;
+  &:focus, :hover {
+    border: 1px solid transparent;
+  }
 }
 
 input[type="email"],

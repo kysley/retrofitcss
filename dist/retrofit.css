@@ -345,17 +345,17 @@ select {
   display: inline-block;
 }
 
-input[type="email"]:hover, input[type="email"]:focus,
-input[type="search"]:hover,
+input[type="email"]:focus, input[type="email"] :hover,
 input[type="search"]:focus,
-input[type="text"]:hover,
+input[type="search"] :hover,
 input[type="text"]:focus,
-input[type="password"]:hover,
+input[type="text"] :hover,
 input[type="password"]:focus,
-textarea:hover,
+input[type="password"] :hover,
 textarea:focus,
-select:hover,
-select:focus {
+textarea :hover,
+select:focus,
+select :hover {
   border: 1px solid transparent;
 }
 
