@@ -1,10 +1,10 @@
 #[RETROFIT](http://retrograde.space)
 
-One of the most basic css starting points.
+Rome wasn't built in a day; your stylesheet shouldn't be either.
 
 ## Why should I use this instead of x framework?
 
-RETROFIT provides you with styles that will only freshen up your website, without breaking your current styles.
+We believe that a stylesheet isn't something you build, or download in a day. If you want something that is truly lightweight (under 5kb minified) that only gives you the basics, then RETROFIT is for you.
 
 ## Get started
 
