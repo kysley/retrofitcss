@@ -1,4 +1,4 @@
-#[RETROFIT](http://retrograde.space)
+# [RETROFIT](http://retrograde.space)
 
 Rome wasn't built in a day; your stylesheet shouldn't be either.
 
